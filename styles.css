@@ -110,7 +110,25 @@ body{
   cursor: pointer;
   display: none;
 }
+/*------gg*/
 
+nav, 
+.nav-links {
+    display: flex;
+}
+
+nav{
+    justify-content:  space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links{
+    gap: 2rem; /* rem: unit of measurement in development */
+    list-style: none;
+    font-size: 1.5rem;
+  }
+  
 
 /*---------------------------HomePage--------------------------*/
 
@@ -218,6 +236,19 @@ profile-photo .img{
 }
 
 
+/*         */
+.details-container{
+  padding: 1.5rem;
+  flex: 1;
+  /* background: white; */
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+/* --- */
+
+
 /*---------------------------Button---------------------------*/
 
 .btn-group{
@@ -260,7 +291,7 @@ profile-photo .img{
   margin-top: 30px;
 } 
 .education-content  h3.title{
-  font-size:24px;
+  font-size:40px;
   margin-bottom: 30px;
   font-weight: 700;
 }
@@ -381,9 +412,154 @@ profile-photo .img{
 .project:hover{
   border-color: #fed700;
 }
+ /* skills */
+ #skills {
+  position: relative;
+  padding: 60px 0; 
+}
+
+.skill-title{
+  margin-bottom: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 40px;
+  color: #fed700;
+  margin-bottom: 20px;
+}
+.skill-title p{
+  color: #e5e5e5;
+}
 
 
+.skill-sub-title {
+  color: #fed700; 
+  font-weight: bold; 
+  font-size: 1.4rem; 
+  margin-bottom: 20px; 
+  text-align: center; 
+}
 
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem; 
+}
+
+.technical-skills-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem; 
+}
+
+.skills-section {
+  margin-bottom: 1rem; 
+  padding: 20px; 
+  border: 2px solid #e5e5e5; 
+  border-radius: 10px; 
+  background-color: #333; 
+  color: #e5e5e5; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  text-align: center; 
+}
+
+.article-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; 
+  justify-content: space-between; 
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 6.5rem; 
+  justify-content: center;
+  gap: 0.5rem; 
+  color: #e5e5e5; 
+}
+
+article .icon {
+  width: 50px; 
+  height: 50px;
+  background-color: #fed700; 
+  border-radius: 50%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333; 
+  font-size: 20px; 
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); 
+  cursor: default;
+}
+
+
+/* contact */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+}
+.contact-title{
+  margin-bottom: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 40px;
+  color: #fed700;
+  margin-bottom: 20px;
+}
+.contact-title p{
+  color: #e5e5e5;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+.linkedin-icon {
+  height: 2.5rem;
+}
+/* FOOTER SECTION */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}
 
 
 
