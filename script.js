@@ -57,10 +57,10 @@ $(document).ready(function() {
     ScrollReveal().reveal(".header ul, .profile-text, .about-skills, .internship", {
       origin: "right"
     });
-    ScrollReveal().reveal(".project-title, .contact-title", {
+    ScrollReveal().reveal(" .skill-title, .project-title, .contact-title", {
       origin: "top"
     });
-    ScrollReveal().reveal(".projects, .contact", {
+    ScrollReveal().reveal("#skills, .projects, .contact", {
       origin: "bottom"
     });
 
